@@ -979,7 +979,13 @@
                 return false;
             }
             
-            openBtn.addEventListener('click', openModal);
+            if (openBtn && modal) {
+    openBtn.addEventListener('click', openModal);
+}
+
+console.log('Waitlist button connected:', openBtn);
+
+closeBtn.addEventListener('click', closeModal);
             closeBtn.addEventListener('click', closeModal);
             
             modal.addEventListener('click', function(e) {
