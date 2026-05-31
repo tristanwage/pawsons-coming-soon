@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — PAWSONS</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
     
     <!-- Google Fonts: Cormorant Garamond (serif) for headings, Inter (sans) for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -164,19 +165,6 @@
         
         .contact-wrapper {
             max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        /* Contact intro */
-        .contact-intro {
-            text-align: center;
-            margin-bottom: clamp(4rem, 10vw, 6rem);
-        }
-        
-        .contact-intro p {
-            font-size: clamp(1rem, 1.8vw, 1.15rem);
-            line-height: 1.8;
-            color: var(--charcoal);
             margin: 0 auto;
         }
         
@@ -350,29 +338,6 @@
             scroll-behavior: smooth;
         }
         
-        /* Fade-in animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-in:nth-child(1) { animation-delay: 0.1s; }
-        .fade-in:nth-child(2) { animation-delay: 0.2s; }
-        .fade-in:nth-child(3) { animation-delay: 0.3s; }
-        .fade-in:nth-child(4) { animation-delay: 0.4s; }
-        
         * {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -382,18 +347,18 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="index.html" class="logo">PAWSONS</a>
+        <a href="index-test.html" class="logo">PAWSONS</a>
         <ul class="nav-links">
-            <li><a href="index.html#philosophy">Philosophy</a></li>
-            <li><a href="index.html#product">Product</a></li>
-            <li><a href="index.html#journal">Journal</a></li>
+            <li><a href="index-test.html#philosophy">Philosophy</a></li>
+            <li><a href="index-test.html#product">Product</a></li>
+            <li><a href="index-test.html#journal">Journal</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content fade-in">
+        <div class="hero-content">
             <h1>Get in touch</h1>
             <p class="hero-tagline">
                 For press, partnerships, wholesale inquiries, or general questions, we would be pleased to hear from you.
@@ -407,19 +372,19 @@
             <div class="contact-wrapper">
                 <!-- Contact Grid -->
                 <div class="contact-grid">
-                    <div class="contact-item fade-in">
+                    <div class="contact-item">
                         <h4>General Inquiries</h4>
                         <span class="contact-item-label">Email</span>
                         <a href="mailto:hello@pawsons.com">hello@pawsons.com</a>
                     </div>
                     
-                    <div class="contact-item fade-in">
+                    <div class="contact-item">
                         <h4>Press & Partnerships</h4>
                         <span class="contact-item-label">Email</span>
                         <a href="mailto:hello@pawsons.com">press@pawsons.com</a>
                     </div>
                     
-                    <div class="contact-item fade-in">
+                    <div class="contact-item">
                         <h4>Wholesale</h4>
                         <span class="contact-item-label">Email</span>
                         <a href="mailto:hello@pawsons.com">wholesale@pawsons.com</a>
@@ -430,10 +395,10 @@
                 <div class="contact-divider"></div>
                 
                 <!-- Social Section -->
-                <div class="social-section fade-in">
-                    <h4>Follow</h4>
+                <div class="social-section">
+                    <h4>Instagram</h4>
                     <a href="https://www.instagram.com/pawsons_/" target="_blank" rel="noopener noreferrer" class="social-link">
-                        Instagram @pawsons_
+                        @pawsons_
                     </a>
                 </div>
             </div>
@@ -445,8 +410,8 @@
         <div class="footer-content">
             <div class="footer-brand">PAWSONS</div>
             <ul class="footer-links">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://www.instagram.com/pawsons_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Terms</a></li>
             </ul>
